@@ -13,10 +13,8 @@ Role Variables
 
 | Variable name | Variable description                                |
 |---------------|-----------------------------------------------------|
-| vector_dest   | Template directory for storing installation scripts |
-|---------------|-----------------------------------------------------|
-| vector_port   | Port number on which was started vector             |
-|---------------|-----------------------------------------------------|
+| vector_dest   | Template directory for storing installation scripts | 
+| vector_port   | Port number on which was started vector             | 
 | vector_user   | Account under which was installed vector. Must have root permissions|
  
 How to use role
