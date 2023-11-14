@@ -1,0 +1,6 @@
+---
+vector:
+  hosts:
+    vector-01:
+      ansible_host: 84.201.129.13
+      ansible_ssh_user: administrator

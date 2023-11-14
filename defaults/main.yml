@@ -1,0 +1,4 @@
+---
+vector_port: 8686
+vector_dest: "/packages"
+vector_user: "administrator"

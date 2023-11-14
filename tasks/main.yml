@@ -1,0 +1,29 @@
+---
+- name: Create installation directory for vector
+  become: true
+  file:
+    path: "{{ vector_dest }}"
+    owner: "{{ vector_user }}"
+    state: directory
+    mode: '0755'
+- name: Get vector installation script
+  get_url:
+    url: "https://repositories.timber.io/public/vector/cfg/setup/bash.deb.sh"
+    dest: "{{ vector_dest }}/bash.deb.sh"
+- name: Install vector  repository
+  become: true
+  command: "bash {{ vector_dest }}/bash.deb.sh"
+- name: Install vector
+  become: true
+  apt: 
+    name: vector
+    update_cache: true
+- name: Add configuration
+  become: true
+  template:
+    src: vector/vector.j2
+    dest: /etc/vector/vector.yaml
+    owner: root
+    group: root
+    mode: '0600'
+  tags: vectorconfig

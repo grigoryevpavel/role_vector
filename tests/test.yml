@@ -1,0 +1,5 @@
+---
+- hosts: vector
+  remote_user: administrator
+  roles:
+    - vector-role
