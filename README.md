@@ -3,10 +3,10 @@ Role Name
 
 roles-vector
 
-Requirements
+Description
 ------------
 
-Role installs vector server on EL. 
+Role installs vector server. 
 
 Role Variables
 --------------
