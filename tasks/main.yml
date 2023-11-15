@@ -21,7 +21,7 @@
 - name: Add configuration
   become: true
   template:
-    src: vector/vector.j2
+    src: vector.j2
     dest: /etc/vector/vector.yaml
     owner: root
     group: root
