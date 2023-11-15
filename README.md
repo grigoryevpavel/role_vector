@@ -11,11 +11,11 @@ Role installs vector server.
 Role Variables
 --------------
 
-| Variable name | Variable description                                |
-|---------------|-----------------------------------------------------|
-| vector_dest   | Template directory for storing installation scripts | 
-| vector_port   | Port number on which was started vector             | 
-| vector_user   | Account under which was installed vector. Must have root permissions|
+| Variable name | Variable description                                               |
+|---------------|--------------------------------------------------------------------|
+| vector_dest   | Template directory for storing installation scripts                | 
+| vector_port   | Port number on which is started vector                             | 
+| vector_user   | Account under which is installed vector. Must have root permissions|
 
 How to install in subfolder **roles** of current project folder
 ---------------
