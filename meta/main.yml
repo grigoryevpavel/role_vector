@@ -1,4 +1,6 @@
 galaxy_info:
+  role_name: role_vector
+  namespace: grigoryevpavel
   author: Grigoryev Pavel
   description: Vector role
   company: Grigoryev
