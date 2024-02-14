@@ -1,7 +1,7 @@
 Role Name
 =========
 
-roles-vector
+role_vector
 
 Description
 ------------
@@ -27,7 +27,7 @@ How to use role
 
   - hosts: servers
     roles:
-        - { role: roles-vector }
+        - { role: role_vector }
 
 License
 -------
